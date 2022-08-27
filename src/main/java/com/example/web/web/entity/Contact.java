@@ -1,32 +1,40 @@
-package com.example.web.web.model;
+package com.example.web.web.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@AllArgsConstructor
 @Entity
 @Table(name = "Contacts")
 public class Contact {
     @Id
-    @Column(name = "name", nullable = false)
+    @Column(name = "name")
     private String name;
 
-    private String imageUrl;
+    @Column(name = "url")
+    private String url;
 
     public String getName() {
         return name;
+    }
+
+    public Contact() {
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getUrl() {
+        return url;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
