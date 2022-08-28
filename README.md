@@ -32,3 +32,7 @@ JDBC URL: jdbc:h2:mem:contactDB
 username: admin
 
 password: admin
+
+React UI
+
+http://localhost:3000/
