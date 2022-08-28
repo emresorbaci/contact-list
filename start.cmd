@@ -1,5 +1,4 @@
+@echo off
 start cmd /c start-backend
-
-cd app
-rem npm install
-npm start
+timeout 5 > NUL
+start cmd /c start-ui
