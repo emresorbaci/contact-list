@@ -26,6 +26,9 @@ Database acces with H2 Console
 http://localhost:8080/h2-console/
 
 Driver Class: org.h2.Driver
+
 JDBC URL: jdbc:h2:mem:contactDB
+
 username: admin
+
 password: admin
